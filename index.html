@@ -1,249 +1,230 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Como La Flor Studio | Nail Salon</title>
-  <meta name="description" content="Como La Flor Studio — Nail salon studio. Book via WhatsApp." />
+  <title>Como La Flor Studio | Diseño de Uñas</title>
+  <meta name="description" content="Como La Flor Studio — Studio de diseño de uñas en Ciudad Juárez. Agenda por WhatsApp." />
 
-  <!-- Social preview -->
   <meta property="og:title" content="Como La Flor Studio" />
-  <meta property="og:description" content="Nail salon studio. Book via WhatsApp." />
+  <meta property="og:description" content="Studio de diseño de uñas en Ciudad Juárez. Agenda por WhatsApp." />
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-  <!-- Top bar -->
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <img class="brand-logo" src="./assets/logo.png" alt="Como La Flor Studio logo" />
+      <a class="brand" href="#top" aria-label="Inicio">
+        <img class="brand-logo" src="./assets/logo.png" alt="Logo de Como La Flor Studio" />
         <div class="brand-text">
           <div class="brand-name">Como La Flor</div>
           <div class="brand-sub">Studio</div>
         </div>
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#booking">Booking</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#contacto">Contacto</a>
         <a class="btn btn-small" href="#" id="waTopBtn">WhatsApp</a>
       </nav>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
     </div>
 
     <div class="mobile-nav container" id="mobileNav" hidden>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#booking">Booking</a>
-      <a href="#contact">Contact</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#agendar">Agendar</a>
+      <a href="#contacto">Contacto</a>
       <a class="btn" href="#" id="waTopBtnMobile">WhatsApp</a>
     </div>
   </header>
 
   <main id="top">
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="pill">Nail Salon Studio</p>
-          <h1>Premium nails. Clean work. <span class="accent">Beautiful details.</span></h1>
+          <p class="pill">Studio de diseño de uñas</p>
+          <h1>Uñas premium. Limpias. <span class="accent">Con detalle perfecto.</span></h1>
           <p class="lead">
-            Book in minutes through WhatsApp. Tell us what you want and we’ll confirm your appointment.
+            Agenda en minutos por WhatsApp. Mándanos el estilo que quieres y te confirmamos disponibilidad.
           </p>
 
           <div class="hero-cta">
-            <a class="btn" href="#booking">Book now</a>
-            <a class="btn btn-ghost" href="#gallery">See our work</a>
+            <a class="btn" href="#agendar">Agendar ahora</a>
+            <a class="btn btn-ghost" href="#galeria">Ver trabajos</a>
           </div>
 
           <div class="hero-badges">
             <div class="badge">
-              <div class="badge-title">Fast booking</div>
-              <div class="badge-sub">WhatsApp confirmation</div>
+              <div class="badge-title">Agenda rápida</div>
+              <div class="badge-sub">Confirmación por WhatsApp</div>
             </div>
             <div class="badge">
-              <div class="badge-title">Instagram updates</div>
-              <div class="badge-sub">Latest posts in gallery</div>
+              <div class="badge-title">Instagram</div>
+              <div class="badge-sub">Se actualiza con tus posts</div>
             </div>
             <div class="badge">
-              <div class="badge-title">Studio quality</div>
-              <div class="badge-sub">Clean + professional</div>
+              <div class="badge-title">Calidad de studio</div>
+              <div class="badge-sub">Profesional y limpio</div>
             </div>
           </div>
         </div>
 
-        <div class="hero-card">
+        <div class="hero-card card" aria-label="Agenda rápida">
           <div class="hero-card-top">
-            <div class="hero-card-title">Quick WhatsApp booking</div>
-            <div class="hero-card-sub">Tap + send your details</div>
+            <div class="hero-card-title">Agenda por WhatsApp</div>
+            <div class="hero-card-sub">Con mensaje ya escrito</div>
           </div>
 
           <div class="hero-card-body">
-            <div class="mini-row"><span>•</span> Choose a service</div>
-            <div class="mini-row"><span>•</span> Pick a date/time</div>
-            <div class="mini-row"><span>•</span> Add inspo photo</div>
+            <div class="mini-row"><span>•</span> Elige servicio</div>
+            <div class="mini-row"><span>•</span> Fecha y hora</div>
+            <div class="mini-row"><span>•</span> Envía foto de inspo</div>
           </div>
 
           <div class="hero-card-bottom">
-            <a class="btn" href="#" id="waHeroBtn">Message on WhatsApp</a>
-            <p class="tiny muted">Opens WhatsApp with a pre-filled booking message.</p>
+            <a class="btn" href="#" id="waHeroBtn">Mandar WhatsApp</a>
+            <p class="tiny muted">Se abre WhatsApp con tu solicitud lista para enviar.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="section" id="services">
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
       <div class="container">
         <div class="section-head">
-          <h2>Services</h2>
-          <p class="muted">Edit these to match your real menu (prices optional).</p>
+          <h2>Servicios</h2>
+          <p class="muted">Aquí podemos ajustar tu menú real (con o sin precios).</p>
         </div>
 
         <div class="grid cards">
           <article class="card">
-            <h3>Gel / Shellac</h3>
-            <p class="muted">Natural look + long wear. Perfect for clean style.</p>
+            <h3>Gel / Rubber</h3>
+            <p class="muted">Acabado natural y duración. Ideal para look limpio.</p>
             <ul class="list">
-              <li>Solid color</li>
-              <li>French / simple design</li>
-              <li>Short to medium length</li>
+              <li>Color sólido</li>
+              <li>Francesa / diseño sencillo</li>
+              <li>Corto a medio</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Acrylic / Extensions</h3>
-            <p class="muted">Shape, structure, and custom sets.</p>
+            <h3>Acrílico / Extensiones</h3>
+            <p class="muted">Estructura, forma y sets personalizados.</p>
             <ul class="list">
-              <li>Short / Medium / Long</li>
-              <li>Custom design</li>
-              <li>Refills available</li>
+              <li>Corto / Medio / Largo</li>
+              <li>Diseño a tu gusto</li>
+              <li>Relleno disponible</li>
             </ul>
           </article>
 
           <article class="card">
             <h3>Nail Art</h3>
-            <p class="muted">From minimal to bold—send inspo and we’ll match it.</p>
+            <p class="muted">Desde minimal hasta full diseño. Manda inspo y lo logramos.</p>
             <ul class="list">
               <li>Chrome / cat eye</li>
-              <li>3D details</li>
-              <li>Hand-drawn designs</li>
+              <li>Detalles 3D</li>
+              <li>Diseño a mano</li>
             </ul>
           </article>
         </div>
 
         <div class="callout">
           <div>
-            <div class="callout-title">Not sure what to book?</div>
-            <div class="muted">Message us on WhatsApp and we’ll recommend the best option.</div>
+            <div class="callout-title">¿No sabes qué elegir?</div>
+            <div class="muted">Escríbenos y te recomendamos según tu idea y estilo.</div>
           </div>
-          <a class="btn btn-ghost" href="#" id="waServicesBtn">Ask on WhatsApp</a>
+          <a class="btn btn-ghost" href="#" id="waServiciosBtn">Preguntar por WhatsApp</a>
         </div>
       </div>
     </section>
 
-    <!-- Instagram Gallery -->
-    <section class="section alt" id="gallery">
+    <!-- GALERÍA / INSTAGRAM -->
+    <section class="section alt" id="galeria">
       <div class="container">
         <div class="section-head">
-          <h2>Gallery</h2>
+          <h2>Galería</h2>
           <p class="muted">
-            This section can auto-update from Instagram using an embed widget (works on GitHub Pages).
+            Aquí va tu feed de Instagram para que se actualice solo cuando publiques.
           </p>
         </div>
 
         <div class="ig-row">
           <a class="btn btn-ghost" href="https://www.instagram.com/comolaflor.gcnails/" target="_blank" rel="noreferrer">
-            Visit Instagram
+            Ver Instagram
           </a>
         </div>
 
-        <!-- OPTION A (Recommended): Use an Instagram feed widget that auto-updates.
-             Pick one provider and paste their widget snippet here (Elfsight / SnapWidget / EmbedSocial).
-             This is the only reliable way to auto-update on GitHub Pages without a backend/token.
-        -->
+        <!-- ✅ Pega aquí el embed del widget (gratis) -->
         <div class="ig-widget card">
           <div class="muted">
-            <strong>Instagram feed widget placeholder</strong><br />
-            To make this auto-update, paste your widget embed code here.
-            If you want the cheapest/free option, tell me and I’ll point you to the best one.
+            <strong>Widget de Instagram</strong><br />
+            Pega aquí el código embed del widget para mostrar tus posts automáticamente.
           </div>
-        </div>
-
-        <!-- OPTION B: Manual grid (if you don't want any widget).
-             Replace the images in /assets/gallery/ and update the HTML.
-        -->
-        <div class="grid gallery-grid" aria-label="Photo gallery (manual)">
-          <div class="gallery-item">Add images</div>
-          <div class="gallery-item">in</div>
-          <div class="gallery-item">/assets/gallery/</div>
-          <div class="gallery-item">or</div>
-          <div class="gallery-item">use</div>
-          <div class="gallery-item">widget</div>
         </div>
       </div>
     </section>
 
-    <!-- Booking -->
-    <section class="section" id="booking">
+    <!-- AGENDAR -->
+    <section class="section" id="agendar">
       <div class="container">
         <div class="section-head">
-          <h2>Booking</h2>
+          <h2>Agendar</h2>
           <p class="muted">
-            Fill this form and it will open WhatsApp with a full pre-written booking message.
+            Llena el formulario y se abrirá WhatsApp con tu mensaje listo (nombre, servicio, fecha y hora).
           </p>
         </div>
 
         <div class="booking-grid">
           <form class="form card" id="bookingForm">
             <label>
-              Your name
-              <input name="name" required placeholder="Full name" />
+              Tu nombre
+              <input name="name" required placeholder="Nombre completo" />
             </label>
 
             <label>
-              Service
+              Servicio
               <select name="service" required>
-                <option value="" selected disabled>Select a service</option>
-                <option>Gel / Shellac</option>
-                <option>Acrylic / Extensions</option>
+                <option value="" selected disabled>Selecciona un servicio</option>
+                <option>Gel / Rubber</option>
+                <option>Acrílico / Extensiones</option>
                 <option>Nail Art</option>
-                <option>Removal</option>
-                <option>Not sure yet</option>
+                <option>Retiro</option>
+                <option>No estoy segura</option>
               </select>
             </label>
 
             <label>
-              Preferred date
+              Fecha preferida
               <input name="date" type="date" required />
             </label>
 
             <label>
-              Preferred time
+              Hora preferida
               <input name="time" type="time" required />
             </label>
 
             <label>
-              Notes / design idea
-              <textarea name="notes" rows="4" placeholder="Tell us the style, length, color, etc."></textarea>
+              Detalles / idea de diseño
+              <textarea name="notes" rows="4" placeholder="Colores, largo, estilo, etc."></textarea>
             </label>
 
-            <button class="btn" type="submit">Open WhatsApp to book</button>
+            <button class="btn" type="submit">Abrir WhatsApp para agendar</button>
             <p class="tiny muted" id="bookingNote" aria-live="polite"></p>
           </form>
 
           <div class="card booking-side">
-            <h3>WhatsApp Booking</h3>
+            <h3>WhatsApp (principal)</h3>
             <p class="muted">
-              Most clients book through WhatsApp — so this site is built around that.
-              You can also send inspo pics directly in WhatsApp.
+              La mayoría agenda por WhatsApp. Envíanos tu idea y si puedes, una foto de inspiración.
             </p>
 
             <div class="divider"></div>
@@ -260,42 +241,46 @@
                   @comolaflor.gcnails
                 </a>
               </div>
+
+              <div class="kv">
+                <div class="kv-label">Ubicación</div>
+                <div class="kv-value muted">Ciudad Juárez, Chihuahua, México</div>
+              </div>
             </div>
 
             <div class="divider"></div>
 
-            <a class="btn btn-ghost" href="#" id="waBlankBtn">Message us now</a>
-            <p class="tiny muted">Opens WhatsApp chat immediately.</p>
+            <a class="btn btn-ghost" href="#" id="waBlankBtn">Mensaje directo</a>
+            <p class="tiny muted">Abre el chat de WhatsApp.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section alt" id="contact">
+    <!-- CONTACTO -->
+    <section class="section alt" id="contacto">
       <div class="container">
         <div class="section-head">
-          <h2>Contact</h2>
-          <p class="muted">Add your studio address and hours here (optional).</p>
+          <h2>Contacto</h2>
+          <p class="muted">La forma más rápida es WhatsApp.</p>
         </div>
 
         <div class="grid contact-grid">
           <div class="card">
-            <h3>Location</h3>
-            <p class="muted">Add your city / address (or “By appointment only”).</p>
-            <p class="muted"><strong>City:</strong> (edit me)</p>
-            <p class="muted"><strong>Hours:</strong> (edit me)</p>
+            <h3>Ciudad</h3>
+            <p class="muted"><strong>Ciudad Juárez, Chihuahua, México</strong></p>
+            <p class="muted">Atención por cita.</p>
           </div>
 
           <div class="card">
-            <h3>Fastest way to book</h3>
-            <p class="muted">WhatsApp is the quickest. Tap below.</p>
-            <a class="btn" href="#" id="waContactBtn">Book on WhatsApp</a>
+            <h3>Agendar</h3>
+            <p class="muted">Toca el botón y manda tu mensaje.</p>
+            <a class="btn" href="#" id="waContactoBtn">Agendar por WhatsApp</a>
           </div>
 
           <div class="card">
-            <h3>Website domain</h3>
-            <p class="muted">Once you connect Namecheap DNS, your site will be:</p>
+            <h3>Website</h3>
+            <p class="muted">Cuando conectes DNS, tu sitio será:</p>
             <p class="muted"><strong>www.comolaflorstudio.com</strong></p>
           </div>
         </div>
@@ -305,12 +290,11 @@
     <footer class="footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> Como La Flor Studio</p>
-        <a class="link" href="#top">Back to top ↑</a>
+        <a class="link" href="#top">Arriba ↑</a>
       </div>
     </footer>
 
-    <!-- Floating WhatsApp button -->
-    <a class="wa-float" id="waFloat" href="#" aria-label="Book on WhatsApp">
+    <a class="wa-float" id="waFloat" href="#" aria-label="Agendar por WhatsApp">
       WhatsApp
     </a>
   </main>
