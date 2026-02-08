@@ -1,17 +1,18 @@
-// === WhatsApp config ===
-// Use wa.me format: countrycode + number (no +, no spaces)
+// WhatsApp: usa formato wa.me con código de país + número (sin +, sin espacios)
 const WA_NUMBER = "526562654955";
 
-// Optional default message:
-const DEFAULT_WA_TEXT = "Hi! I’d like to book an appointment at Como La Flor Studio 💐";
-
-// Build a WhatsApp link with a message
 function waLink(text) {
-  const msg = encodeURIComponent(text || DEFAULT_WA_TEXT);
+  const msg = encodeURIComponent(text);
   return `https://wa.me/${WA_NUMBER}?text=${msg}`;
 }
 
-// Wire up buttons
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const msgDefault = "Hola! Quiero agendar una cita en Como La Flor Studio 💐";
+const msgHero = "Hola! Quiero agendar en Como La Flor Studio 💐. ¿Qué disponibilidad tienes?";
+const msgServicios = "Hola! No estoy segura qué servicio elegir. ¿Me recomiendas uno según mi idea? 💐";
+const msgContacto = "Hola! Me gustaría agendar una cita en Como La Flor Studio 💐";
+
 function setHref(id, text) {
   const el = document.getElementById(id);
   if (!el) return;
@@ -20,26 +21,22 @@ function setHref(id, text) {
   el.rel = "noreferrer";
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
+setHref("waTopBtn", msgDefault);
+setHref("waTopBtnMobile", msgDefault);
+setHref("waHeroBtn", msgHero);
+setHref("waServiciosBtn", msgServicios);
+setHref("waBlankBtn", msgDefault);
+setHref("waContactoBtn", msgContacto);
+setHref("waFloat", msgContacto);
 
-// Top / hero / services / contact buttons
-setHref("waTopBtn", DEFAULT_WA_TEXT);
-setHref("waTopBtnMobile", DEFAULT_WA_TEXT);
-setHref("waHeroBtn", "Hi! I want to book at Como La Flor Studio 💐. What availability do you have?");
-setHref("waServicesBtn", "Hi! I’m not sure what to book. Can you recommend a nail service for me?");
-setHref("waBlankBtn", DEFAULT_WA_TEXT);
-setHref("waContactBtn", "Hi! I want to book an appointment at Como La Flor Studio 💐.");
-setHref("waFloat", "Hi! I want to book at Como La Flor Studio 💐.");
-
-// Direct phone display link
 const waDirect = document.getElementById("waDirectLink");
 if (waDirect) {
-  waDirect.href = waLink(DEFAULT_WA_TEXT);
+  waDirect.href = waLink(msgDefault);
   waDirect.target = "_blank";
   waDirect.rel = "noreferrer";
 }
 
-// Mobile menu
+// Menú móvil
 const menuBtn = document.getElementById("menuBtn");
 const mobileNav = document.getElementById("mobileNav");
 
@@ -55,7 +52,6 @@ if (menuBtn && mobileNav) {
     }
   });
 
-  // Close menu when clicking a link
   mobileNav.querySelectorAll("a").forEach(a => {
     a.addEventListener("click", () => {
       mobileNav.setAttribute("hidden", "");
@@ -64,7 +60,7 @@ if (menuBtn && mobileNav) {
   });
 }
 
-// Booking form -> opens WhatsApp with a prefilled message
+// Formulario -> abre WhatsApp con mensaje ya armado
 const form = document.getElementById("bookingForm");
 const bookingNote = document.getElementById("bookingNote");
 
@@ -80,19 +76,18 @@ if (form) {
     const notes = (data.get("notes") || "").toString().trim();
 
     const msg =
-      `Hi! I’d like to book at Como La Flor Studio 💐\n\n` +
-      `Name: ${name}\n` +
-      `Service: ${service}\n` +
-      `Preferred date: ${date}\n` +
-      `Preferred time: ${time}\n` +
-      (notes ? `Notes: ${notes}\n` : "") +
-      `\nI can send an inspo photo here too.`;
+      `Hola! Quiero agendar una cita en Como La Flor Studio 💐\n\n` +
+      `Nombre: ${name}\n` +
+      `Servicio: ${service}\n` +
+      `Fecha preferida: ${date}\n` +
+      `Hora preferida: ${time}\n` +
+      (notes ? `Detalles: ${notes}\n` : "") +
+      `\nPuedo enviar una foto de inspiración por aquí.`;
 
-    if (bookingNote) bookingNote.textContent = "Opening WhatsApp…";
+    if (bookingNote) bookingNote.textContent = "Abriendo WhatsApp…";
     window.open(waLink(msg), "_blank", "noreferrer");
 
-    // Optional: clear form
-    // form.reset();
     setTimeout(() => { if (bookingNote) bookingNote.textContent = ""; }, 2500);
   });
 }
+
