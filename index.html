@@ -12,22 +12,26 @@
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Elfsight (Instagram feed) -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Inicio">
-        <img class="brand-logo" src="./assets/logo.png" alt="Logo de Como La Flor Studio" />
-        <div class="brand-text">
+    <div class="container header-inner header-center">
+      <!-- Logo grande al centro -->
+      <a class="brand brand-center" href="#top" aria-label="Inicio">
+        <img class="brand-logo brand-logo-big" src="./assets/logo.png" alt="Logo de Como La Flor Studio" />
+        <div class="brand-text brand-text-center">
           <div class="brand-name">Como La Flor</div>
           <div class="brand-sub">Studio</div>
         </div>
       </a>
 
-      <nav class="nav" aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a>
+      <nav class="nav nav-center" aria-label="Navegación principal">
         <a href="#galeria">Galería</a>
+        <a href="#servicios">Servicios</a>
         <a href="#agendar">Agendar</a>
         <a href="#contacto">Contacto</a>
         <a class="btn btn-small" href="#agendar">Agendar cita</a>
@@ -37,23 +41,23 @@
     </div>
 
     <div class="mobile-nav container" id="mobileNav" hidden>
-      <a href="#servicios">Servicios</a>
       <a href="#galeria">Galería</a>
+      <a href="#servicios">Servicios</a>
       <a href="#agendar">Agendar</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn" href="#" id="waTopBtnMobile">WhatsApp</a>
+      <a class="btn" href="#agendar">Agendar cita</a>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero hero-light">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="pill">Studio de diseño de uñas</p>
-          <h1>Uñas premium. Limpias. <span class="accent">Con detalle perfecto.</span></h1>
+          <h1>Uñas premium, limpias y <span class="accent">con detalle perfecto</span>.</h1>
           <p class="lead">
-            Agenda en minutos por WhatsApp. Mándanos el estilo que quieres y te confirmamos disponibilidad.
+            Agenda por WhatsApp en minutos. Mándanos tu idea (y si tienes, foto de inspiración) y te confirmamos.
           </p>
 
           <div class="hero-cta">
@@ -64,243 +68,11 @@
           <div class="hero-badges">
             <div class="badge">
               <div class="badge-title">Agenda rápida</div>
-              <div class="badge-sub">Confirmación por WhatsApp</div>
+              <div class="badge-sub">WhatsApp</div>
             </div>
             <div class="badge">
-              <div class="badge-title">Instagram</div>
-              <div class="badge-sub">Se actualiza con tus posts</div>
+              <div class="badge-title">Diseños</div>
+              <div class="badge-sub">Personalizados</div>
             </div>
             <div class="badge">
-              <div class="badge-title">Calidad de studio</div>
-              <div class="badge-sub">Profesional y limpio</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-card card" aria-label="Agenda rápida">
-          <div class="hero-card-top">
-            <div class="hero-card-title">Agenda por WhatsApp</div>
-            <div class="hero-card-sub">Con mensaje ya escrito</div>
-          </div>
-
-          <div class="hero-card-body">
-            <div class="mini-row"><span>•</span> Elige servicio</div>
-            <div class="mini-row"><span>•</span> Fecha y hora</div>
-            <div class="mini-row"><span>•</span> Envía foto de inspo</div>
-          </div>
-
-          <div class="hero-card-bottom">
-            <a class="btn" href="#" id="waHeroBtn">Mandar WhatsApp</a>
-            <p class="tiny muted">Se abre WhatsApp con tu solicitud lista para enviar.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section class="section" id="servicios">
-      <div class="container">
-        <div class="section-head">
-          <h2>Servicios</h2>
-          <p class="muted">Aquí podemos ajustar tu menú real (con o sin precios).</p>
-        </div>
-
-        <div class="grid cards">
-          <article class="card">
-            <h3>Gel / Rubber</h3>
-            <p class="muted">Acabado natural y duración. Ideal para look limpio.</p>
-            <ul class="list">
-              <li>Color sólido</li>
-              <li>Francesa / diseño sencillo</li>
-              <li>Corto a medio</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Acrílico / Extensiones</h3>
-            <p class="muted">Estructura, forma y sets personalizados.</p>
-            <ul class="list">
-              <li>Corto / Medio / Largo</li>
-              <li>Diseño a tu gusto</li>
-              <li>Relleno disponible</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Nail Art</h3>
-            <p class="muted">Desde minimal hasta full diseño. Manda inspo y lo logramos.</p>
-            <ul class="list">
-              <li>Chrome / cat eye</li>
-              <li>Detalles 3D</li>
-              <li>Diseño a mano</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="callout">
-          <div>
-            <div class="callout-title">¿No sabes qué elegir?</div>
-            <div class="muted">Escríbenos y te recomendamos según tu idea y estilo.</div>
-          </div>
-          <a class="btn btn-ghost" href="#" id="waServiciosBtn">Preguntar por WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALERÍA / INSTAGRAM -->
-    <section class="section alt" id="galeria">
-      <div class="container">
-        <div class="section-head">
-          <h2>Galería</h2>
-          <p class="muted">
-            Aquí va tu feed de Instagram para que se actualice solo cuando publiques.
-          </p>
-        </div>
-
-        <div class="ig-row">
-          <a class="btn btn-ghost" href="https://www.instagram.com/comolaflor.gcnails/" target="_blank" rel="noreferrer">
-            Ver Instagram
-          </a>
-        </div>
-
-        <<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-1fae7fbc-b278-44cc-a476-918262bd8807" data-elfsight-app-lazy></div>>
-        <div class="ig-widget card">
-          <div class="muted">
-            <strong>Widget de Instagram</strong><br />
-            Pega aquí el código embed del widget para mostrar tus posts automáticamente.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- AGENDAR -->
-    <section class="section" id="agendar">
-      <div class="container">
-        <div class="section-head">
-          <h2>Agendar</h2>
-          <p class="muted">
-            Llena el formulario y se abrirá WhatsApp con tu mensaje listo (nombre, servicio, fecha y hora).
-          </p>
-        </div>
-
-        <div class="booking-grid">
-          <form class="form card" id="bookingForm">
-            <label>
-              Tu nombre
-              <input name="name" required placeholder="Nombre completo" />
-            </label>
-
-            <label>
-              Servicio
-              <select name="service" required>
-                <option value="" selected disabled>Selecciona un servicio</option>
-                <option>Gel / Rubber</option>
-                <option>Acrílico / Extensiones</option>
-                <option>Nail Art</option>
-                <option>Retiro</option>
-                <option>No estoy segura</option>
-              </select>
-            </label>
-
-            <label>
-              Fecha preferida
-              <input name="date" type="date" required />
-            </label>
-
-            <label>
-              Hora preferida
-              <input name="time" type="time" required />
-            </label>
-
-            <label>
-              Detalles / idea de diseño
-              <textarea name="notes" rows="4" placeholder="Colores, largo, estilo, etc."></textarea>
-            </label>
-
-            <button class="btn" type="submit">Abrir WhatsApp para agendar</button>
-            <p class="tiny muted" id="bookingNote" aria-live="polite"></p>
-          </form>
-
-          <div class="card booking-side">
-            <h3>WhatsApp (principal)</h3>
-            <p class="muted">
-              La mayoría agenda por WhatsApp. Envíanos tu idea y si puedes, una foto de inspiración.
-            </p>
-
-            <div class="divider"></div>
-
-            <div class="kvs">
-              <div class="kv">
-                <div class="kv-label">WhatsApp</div>
-                <a class="kv-value link" href="#" id="waDirectLink">+52 656 265 4955</a>
-              </div>
-
-              <div class="kv">
-                <div class="kv-label">Instagram</div>
-                <a class="kv-value link" href="https://www.instagram.com/comolaflor.gcnails/" target="_blank" rel="noreferrer">
-                  @comolaflor.gcnails
-                </a>
-              </div>
-
-              <div class="kv">
-                <div class="kv-label">Ubicación</div>
-                <div class="kv-value muted">Ciudad Juárez, Chihuahua, México</div>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <a class="btn btn-ghost" href="#" id="waBlankBtn">Mensaje directo</a>
-            <p class="tiny muted">Abre el chat de WhatsApp.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="section alt" id="contacto">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contacto</h2>
-          <p class="muted">La forma más rápida es WhatsApp.</p>
-        </div>
-
-        <div class="grid contact-grid">
-          <div class="card">
-            <h3>Ciudad</h3>
-            <p class="muted"><strong>Ciudad Juárez, Chihuahua, México</strong></p>
-            <p class="muted">Atención por cita.</p>
-          </div>
-
-          <div class="card">
-            <h3>Agendar</h3>
-            <p class="muted">Toca el botón y manda tu mensaje.</p>
-           <a class="btn" href="#" id="waContactoBtn">Agendar cita</a>
-          </div>
-
-          <div class="card">
-            <h3>Website</h3>
-            <p class="muted">Cuando conectes DNS, tu sitio será:</p>
-            <p class="muted"><strong>www.comolaflorstudio.com</strong></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> Como La Flor Studio</p>
-        <a class="link" href="#top">Arriba ↑</a>
-      </div>
-    </footer>
-
-    <a class="wa-float" id="waFloat" href="#" aria-label="Agendar por WhatsApp">
-      WhatsApp
-    </a>
-  </main>
-
-  <script src="./script.js"></script>
-</body>
-</html>
+              <div class="badge-title">Studio</div>
