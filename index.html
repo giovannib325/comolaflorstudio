@@ -76,3 +76,221 @@
             </div>
             <div class="badge">
               <div class="badge-title">Studio</div>
+              <div class="badge-sub">Profesional</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card card" aria-label="Agenda por WhatsApp">
+          <div class="hero-card-top">
+            <div class="hero-card-title">Agenda por WhatsApp</div>
+            <div class="hero-card-sub">Rápido y fácil</div>
+          </div>
+
+          <div class="hero-card-body">
+            <div class="mini-row"><span>•</span> Servicio</div>
+            <div class="mini-row"><span>•</span> Fecha y hora</div>
+            <div class="mini-row"><span>•</span> Inspo (opcional)</div>
+          </div>
+
+          <div class="hero-card-bottom">
+            <a class="btn" href="#" id="waHeroBtn">Mandar WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA / INSTAGRAM (SUBIDA ARRIBA) -->
+    <section class="section ig-top" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <h2>Galería</h2>
+          <p class="muted">Mira los diseños más recientes.</p>
+        </div>
+
+        <div class="ig-row">
+          <a class="btn btn-ghost" href="https://www.instagram.com/comolaflor.gcnails/" target="_blank" rel="noreferrer">
+            Ver Instagram
+          </a>
+        </div>
+
+        <!-- Elfsight Instagram Feed -->
+        <div class="ig-embed card">
+          <div class="elfsight-app-1fae7fbc-b278-44cc-a476-918262bd8807" data-elfsight-app-lazy></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <h2>Servicios</h2>
+          <p class="muted">Diseño de uñas con acabado profesional.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <h3>Gel / Rubber</h3>
+            <p class="muted">Acabado natural y duración.</p>
+            <ul class="list">
+              <li>Color sólido</li>
+              <li>Francesa / diseño sencillo</li>
+              <li>Corto a medio</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Acrílico / Extensiones</h3>
+            <p class="muted">Estructura, forma y sets personalizados.</p>
+            <ul class="list">
+              <li>Corto / Medio / Largo</li>
+              <li>Diseño a tu gusto</li>
+              <li>Relleno disponible</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Nail Art</h3>
+            <p class="muted">Desde minimal hasta full diseño.</p>
+            <ul class="list">
+              <li>Chrome / cat eye</li>
+              <li>Detalles 3D</li>
+              <li>Diseño a mano</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="callout">
+          <div>
+            <div class="callout-title">¿No sabes qué elegir?</div>
+            <div class="muted">Escríbenos y te recomendamos según tu idea.</div>
+          </div>
+          <a class="btn btn-ghost" href="#" id="waServiciosBtn">Preguntar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAR -->
+    <section class="section alt" id="agendar">
+      <div class="container">
+        <div class="section-head">
+          <h2>Agendar</h2>
+          <p class="muted">Llena el formulario y te abre WhatsApp con tu mensaje listo.</p>
+        </div>
+
+        <div class="booking-grid">
+          <form class="form card" id="bookingForm">
+            <label>
+              Tu nombre
+              <input name="name" required placeholder="Nombre completo" />
+            </label>
+
+            <label>
+              Servicio
+              <select name="service" required>
+                <option value="" selected disabled>Selecciona un servicio</option>
+                <option>Gel / Rubber</option>
+                <option>Acrílico / Extensiones</option>
+                <option>Nail Art</option>
+                <option>Retiro</option>
+                <option>No estoy segura</option>
+              </select>
+            </label>
+
+            <label>
+              Fecha preferida
+              <input name="date" type="date" required />
+            </label>
+
+            <label>
+              Hora preferida
+              <input name="time" type="time" required />
+            </label>
+
+            <label>
+              Detalles / idea
+              <textarea name="notes" rows="4" placeholder="Colores, largo, estilo, etc."></textarea>
+            </label>
+
+            <button class="btn" type="submit">Agendar cita por WhatsApp</button>
+            <p class="tiny muted" id="bookingNote" aria-live="polite"></p>
+          </form>
+
+          <div class="card booking-side">
+            <h3>Contacto rápido</h3>
+            <p class="muted">WhatsApp es la forma más rápida para confirmar tu cita.</p>
+
+            <div class="divider"></div>
+
+            <div class="kvs">
+              <div class="kv">
+                <div class="kv-label">WhatsApp</div>
+                <a class="kv-value link" href="#" id="waDirectLink">+52 656 265 4955</a>
+              </div>
+
+              <div class="kv">
+                <div class="kv-label">Instagram</div>
+                <a class="kv-value link" href="https://www.instagram.com/comolaflor.gcnails/" target="_blank" rel="noreferrer">
+                  @comolaflor.gcnails
+                </a>
+              </div>
+
+              <div class="kv">
+                <div class="kv-label">Ubicación</div>
+                <div class="kv-value muted">Ciudad Juárez, Chihuahua, México</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <a class="btn btn-ghost" href="#" id="waBlankBtn">Mensaje directo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contacto</h2>
+          <p class="muted">La forma más rápida es WhatsApp.</p>
+        </div>
+
+        <div class="grid contact-grid">
+          <div class="card">
+            <h3>Ciudad</h3>
+            <p class="muted"><strong>Ciudad Juárez, Chihuahua, México</strong></p>
+            <p class="muted">Atención por cita.</p>
+          </div>
+
+          <div class="card">
+            <h3>Agendar</h3>
+            <p class="muted">Toca para agendar tu cita.</p>
+            <a class="btn" href="#" id="waContactoBtn">Agendar cita</a>
+          </div>
+
+          <div class="card">
+            <h3>Website</h3>
+            <p class="muted"><strong>www.comolaflorstudio.com</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Como La Flor Studio</p>
+        <a class="link" href="#top">Arriba ↑</a>
+      </div>
+    </footer>
+
+    <a class="wa-float" id="waFloat" href="#" aria-label="Agendar por WhatsApp">
+      WhatsApp
+    </a>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
