@@ -8,10 +8,10 @@ function waLink(text) {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const msgDefault = "Hola! Quiero agendar una cita en Como La Flor Studio 💐";
-const msgHero = "Hola! Quiero agendar en Como La Flor Studio 💐. ¿Qué disponibilidad tienes?";
-const msgServicios = "Hola! No estoy segura qué servicio elegir. ¿Me recomiendas uno según mi idea? 💐";
-const msgContacto = "Hola! Me gustaría agendar una cita en Como La Flor Studio 💐";
+const msgDefault = "Hola! Quiero agendar una cita en Como La Flor Studio 🌹";
+const msgHero = "Hola! Quiero agendar en Como La Flor Studio 🌹. ¿Qué disponibilidad tienes?";
+const msgServicios = "Hola! No estoy segura qué servicio elegir. ¿Me recomiendas uno según mi idea? 🌹";
+const msgContacto = "Hola! Me gustaría agendar una cita en Como La Flor Studio 🌹";
 
 function setHref(id, text) {
   const el = document.getElementById(id);
@@ -76,7 +76,7 @@ if (form) {
     const notes = (data.get("notes") || "").toString().trim();
 
     const msg =
-      `Hola! Quiero agendar una cita en Como La Flor Studio 💐\n\n` +
+      `Hola! Quiero agendar una cita en Como La Flor Studio 🌹\n\n` +
       `Nombre: ${name}\n` +
       `Servicio: ${service}\n` +
       `Fecha preferida: ${date}\n` +
